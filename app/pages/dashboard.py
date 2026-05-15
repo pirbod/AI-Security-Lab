@@ -5,12 +5,12 @@ from __future__ import annotations
 import streamlit as st
 
 from app.database import recent_reports, save_report_metadata
-from app.models import Finding, STATUS_ORDER
+from app.models import STATUS_ORDER, Finding
 from app.report_writer import write_report
 from scanners.localhost_ports import scan_localhost_ports
 from scanners.nginx_config_check import check_nginx_configs
-from scanners.open_webui_check import run_check as open_webui_check
 from scanners.ollama_check import run_check as ollama_check
+from scanners.open_webui_check import run_check as open_webui_check
 from scanners.vllm_check import run_check as vllm_check
 
 

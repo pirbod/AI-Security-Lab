@@ -6,8 +6,8 @@ import streamlit as st
 
 from app.database import save_report_metadata
 from app.report_writer import write_report
-from scanners.open_webui_check import run_check as open_webui_check
 from scanners.ollama_check import run_check as ollama_check
+from scanners.open_webui_check import run_check as open_webui_check
 from scanners.vllm_check import run_check as vllm_check
 
 
